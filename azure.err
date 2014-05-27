@@ -1,0 +1,17 @@
+Tue May 27 2014 12:20:43 GMT-0500 (CDT):
+{ [Error: ENOENT, no such file or directory '/user/local/downloads/azurecredentials.publishsettings']
+  stack: [Getter/Setter],
+  errno: 34,
+  code: 'ENOENT',
+  path: '/user/local/downloads/azurecredentials.publishsettings',
+  syscall: 'open',
+  __frame: undefined,
+  rawStack: [Getter] }
+Error: ENOENT, no such file or directory '/user/local/downloads/azurecredentials.publishsettings'
+    at Object.fs.openSync (fs.js:427:18)
+    at Object.fs.readFileSync (fs.js:284:15)
+    at readFileContents (/usr/local/azure/lib/util/profile/publishSettings.js:28:23)
+    at Object.importPublishSettings [as import] (/usr/local/azure/lib/util/profile/publishSettings.js:91:13)
+    at Profile._.extend.importPublishSettings (/usr/local/azure/lib/util/profile/profile.js:185:34)
+    at __5 (/usr/local/azure/lib/commands/account.js:112:23)
+
